@@ -13,7 +13,7 @@
     <title>Clinica Dental "Paz Mental"</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="cambiarImagen()">
     <header>
         <nav>
             <div class="logo">
@@ -34,6 +34,9 @@
         <div class="hero">
             <h2>Tu Sonrisa es Nuestra Pasión</h2>
             <p>Más de 15 años cuidando la salud bucal de tu familia</p>
+            <div class="imagesanimation">
+                <img src="images/1.jpg" id="animacion" width="400px" height="300px">
+            </div>
             <a href="#contacto" class="btn-primary">Agenda tu Cita</a>
         </div>
     </section>
@@ -73,5 +76,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
