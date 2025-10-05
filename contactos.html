@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactos.css">
     <title>Contacto - 🦷 Sonrisa Perfecta</title>
 </head>
 <body>
-<form action="registro.php" ></form>
+<section class="formulario">
+    <h1>¡AGENDA TU CITA!</h1>
+        <form action="registro.php" method="POST">
+            <div class="orden">
+                <label >Nombre:</label>
+                <input type="text" name="nombre" required>
+                <label >Correo Electrónico:</label>
+                <input type="email" name="correo" required>
+            </div>
+            <div class="orden">
+            
+                <label >Teléfono:</label>
+                <input type="tel" name="telefono" required>
+                <label >Fecha de Cita:</label>
+                <input type="date" name="fecha" required>
+            </div>
+            <div class="lastorden">
+                <label for="">Mensaje:</label>
+                <input type="text" name="mensaje" required>
+                <button type="button" id="send">Enviar</button>
+            </div>
+        </form>
+</section>
 </body>
 </html>

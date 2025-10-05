@@ -1,0 +1,39 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+
+}
+h1{
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario{
+    
+    background-color: #0077B6;
+    border-radius: 20px;
+    margin-top: 40%;
+    padding: 10px;
+}
+input{
+    border: none;
+    border-radius: 5px;
+}
+.orden{
+    display: flexbox;
+
+    gap: 20px;
+}
+.lastorden{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+#send{
+
+}

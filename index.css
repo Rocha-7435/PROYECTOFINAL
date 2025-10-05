@@ -59,7 +59,11 @@ nav ul {
     margin: 0 auto;
     padding: 0 20px;
 }
-
+#animacion{
+    border-radius: 20px;
+    height: 500px;
+    width: 600px;
+}
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -403,8 +407,10 @@ a{
     text-decoration: none;
 }
 .hero{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
