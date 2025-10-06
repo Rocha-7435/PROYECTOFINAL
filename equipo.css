@@ -248,7 +248,7 @@ nav ul li a:hover {
     font-weight: 300;
 }
 
-.btn-primary {
+.btn-citas {
     display: inline-block;
     background: white;
     color: #0077B6;
@@ -261,7 +261,7 @@ nav ul li a:hover {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-.btn-primary:hover {
+.btn-citas:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.3);
     background: #f0f0f0;
