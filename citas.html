@@ -1,32 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonios - 🦷 Sonrisa Perfecta</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="citas.css">
+    <title>Citas - 🦷 Paz Dental</title>
 </head>
 <body>
-    <header>
+   <header class="header">
         <nav>
             <div class="logo">
-                <h1>🦷 Sonrisa Perfecta</h1>
+                <img id="imglogo" src="images/logo.png" alt="Logo Paz Dental">
+                <h1>PAZ DENTAL</h1>
             </div>
-            <ul>
+            <ul class="htmls">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="citas.html" class="seleccionado">Citas</a></li>
                 <li><a href="equipo.html">Equipo</a></li>
-                <li><a href="testimonios.html">Testimonios</a></li>
                 <li><a href="contactos.html">Contacto</a></li>
             </ul>
         </nav>
-     </header>
+    </header>
 
-    <main>
-
-
+    <main class="contenedor-principal">
+        <section class="formulario">
+            <h1>¡AGENDA TU CITA!</h1>
+            <form action="registro.php" method="POST">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="correo">Correo Electrónico *</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890" required>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="fecha">Fecha de Cita *</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje (opcional)</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Algo que debamos saber?"></textarea>
+                </div>
+                
+                <button type="submit" id="send">Enviar</button>
+            </form>
+        </section>
     </main>
-    <footer>
+     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-seccion">
@@ -39,9 +72,8 @@
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="citas.html">citas</a></li>
                         <li><a href="equipo.html">Equipo</a></li>
-                        <li><a href="testimonios.html">Testimonios</a></li>
                         <li><a href="contactos.html">Contacto</a></li>
                     </ul>
                 </div>
@@ -49,9 +81,9 @@
                 <div class="footer-seccion">
                     <h4>Síguenos</h4>
                     <div class="redes-sociales">
-                        <a href="#">Facebook</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">WhatsApp</a>
+                        <a href="LinkFaceebook"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="LinkInstagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="LinkWhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                     </div>
                 </div>
             </div>
