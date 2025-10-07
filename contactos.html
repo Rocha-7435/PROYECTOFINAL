@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +16,10 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <h1>🦷 Sonrisa Perfecta</h1>
-            </div>
+        <div class="logo">
+          <img id="imagelogo" src="images/logo.png" />
+          <h1>PAZ DENTAL</h1>
+        </div>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -28,42 +31,133 @@
      </header>
 
     <main>
-
-
-    </main>
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-seccion">
-                    <h3>🦷 Sonrisa Perfecta</h3>
-                    <p>Tu clínica dental de confianza desde 2008</p>
-                </div>
+    <section class="container">
+        <div class="section-header">
+            <h1><i class="fas fa-map-marker-alt"></i> Encuéntranos</h1>
+            <p>Estamos ubicados en el corazón de la ciudad para servirte mejor</p>
+        </div>
+        <div class="location-grid">
+            <div class="info-card">
+                <h2><i class="fas fa-info-circle"></i> Información de Contacto</h2>
                 
-                <div class="footer-seccion">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="citas.html">Citas</a></li>
-                        <li><a href="equipo.html">Equipo</a></li>
-                        <li><a href="contactos.html">Contacto</a></li>
-                    </ul>
+                <div class="info-item">
+                    <i class="fas fa-map-pin"></i>
+                    <div class="info-content">
+                        <h3>Dirección</h3>
+                        <p>Av. Principal #123, Edificio Médico<br>Zona Centro, Ciudad</p>
+                    </div>
                 </div>
-                
-                 <div class="footer-seccion">
-                    <h4>Síguenos</h4>
-                    <div class="redes-sociales">
-                        <a class="facebook" href="#"><i class="fab fa-facebook"></i> Facebook</a>
-                        <a class="instagram" href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                        <a class="whatsapp" href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="info-content">
+                        <h3>Teléfono</h3>
+                        <p><a href="tel:+59112345678">+591 1234-5678</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div class="info-content">
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/59112345678">+591 1234-5678</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p><a href="mailto:contacto@clinicadental.com">contacto@clinicadental.com</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-car"></i>
+                    <div class="info-content">
+                        <h3>Estacionamiento</h3>
+                        <p>Disponible - Gratuito para pacientes</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Clínica Dental Sonrisa Perfecta. Todos los derechos reservados.</p>
+
+            <div class="info-card">
+                <h2><i class="fas fa-clock"></i> Horarios de Atención</h2>
+                
+                <div class="schedule-table">
+                    <div class="schedule-row">
+                        <span class="day">Lunes - Viernes</span>
+                        <span class="time">8:00 AM - 7:00 PM</span>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="day">Sábados</span>
+                        <span class="time">9:00 AM - 2:00 PM</span>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="day">Domingos</span>
+                        <span class="time">Cerrado</span>
+                    </div>
+                </div>
+
+                <div class="info-item" style="margin-top: 30px;">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <div class="info-content">
+                        <h3>Emergencias Dentales</h3>
+                        <p>Disponibles 24/7<br>Llamar al <a href="tel:+59112345999">+591 1234-5999</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-directions"></i>
+                    <div class="info-content">
+                        <h3>Cómo Llegar</h3>
+                        <p>Frente a la Plaza Principal, a 2 cuadras del Banco Central. Edificio de 3 pisos color blanco.</p>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="map-container">
+            <!-- Reemplaza el src con tu ubicación real de Google Maps -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15305.344896755252!2d-66.15695!3d-17.39395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDIzJzM4LjIiUyA2NsKwMDknMjUuMCJX!5e0!3m2!1ses!2sbo!4v1234567890"
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="cta-section">
+            <div class="cta-buttons">
+                <a href="citas.html" class="cta-btn primary">
+                    <i class="fas fa-calendar-check"></i>
+                    Agendar Cita
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+     <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-seccion">
+            <h3>🦷 Sonrisa Perfecta</h3>
+            <p>Tu clínica dental de confianza desde 2008</p>
+          </div>
+          <div class="footer-seccion">
+            <h4>Síguenos</h4>
+            <div class="redes-sociales">
+              <a class="facebook" href="#"><i class="fab fa-facebook"></i> Facebook</a>
+              <a class="instagram" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              <a class="whatsapp" href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Clínica Dental Sonrisa Perfecta. Todos los derechos
+            reservados.
+          </p>
+        </div>
+      </div>
     </footer>
 </body>
 </html>
