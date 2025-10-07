@@ -210,6 +210,28 @@ footer {
     gap: 15px;
     flex-direction: column;
 }
+a.redes-sociales, .redes-sociales a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #d0d0d0;
+    font-weight: 600;
+}
+
+.redes-sociales a i {
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociales a.facebook i { color: #1877F2; }
+.redes-sociales a.instagram i { color: #E1306C; }
+.redes-sociales a.whatsapp i { color: #25D366; }
+
+.redes-sociales a:hover { color: #fff; }
 a{
     color: white;
     text-decoration: none;
