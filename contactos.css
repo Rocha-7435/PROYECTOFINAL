@@ -334,7 +334,7 @@ footer {
   color: #888;
   font-weight: 300;
 }
-/* Responsive rules */
+
 @media (max-width: 968px) {
     nav {
         flex-direction: column;
@@ -426,4 +426,4 @@ a{
     text-decoration: none;
 }
 
-/* removed unused #imglogo and .hero selectors (not referenced in contactos.html) */
+

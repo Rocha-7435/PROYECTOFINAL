@@ -224,7 +224,7 @@ footer {
 
 .redes-sociales a:hover { color: #fff; }
 
-/* Responsive Design */
+/* diseño responsivo */
 @media (max-width: 968px) {
     nav {
         flex-direction: column;

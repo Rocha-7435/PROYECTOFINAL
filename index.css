@@ -206,7 +206,7 @@ footer {
   font-weight: 300;
 }
 
-/* Responsive Design */
+/* diseño responsivo*/
 @media (max-width: 968px) {
   nav {
     flex-direction: column;
@@ -277,7 +277,7 @@ footer {
   justify-content: center;
 }
 
-/* Specific brand colors */
+/* color de las redes sociales */
 .redes-sociales a.facebook i { color: #1877F2; }
 .redes-sociales a.instagram i { color: #E1306C; }
 .redes-sociales a.whatsapp i { color: #25D366; }
