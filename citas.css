@@ -335,7 +335,6 @@ footer {
     }
 
     .contenedor-principal {
-        /* switch to single-column stack on smaller screens */
         display: flex;
         flex-direction: column;
         padding: 140px 15px 30px;
