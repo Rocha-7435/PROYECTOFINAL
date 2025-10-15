@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Servicios - 🦷 Sonrisa Perfecta</title>       
     <link rel="stylesheet" href="servicios.css">
+    <link rel="stylesheet" href="cotizador.css">
 </head>
 <body>
     <header>
@@ -77,6 +78,123 @@
         </div>
     </div>
 </section>
+
+<!-- Sección del Cotizador -->
+<section class="cotizador-section">
+    <div class="container">
+        <h2><i class="fas fa-calculator"></i> Cotizador de Servicios</h2>
+        <p>Selecciona los servicios que necesitas y obtén una cotización instantánea con descuentos especiales.</p>
+        
+        <form id="cotizador-form" class="cotizador-form">
+            <div class="servicios-grid">
+                <div class="servicio-option">
+                    <input type="checkbox" id="revision" name="servicios" value="revision">
+                    <label for="revision">
+                        <div class="servicio-info">
+                            <h3>Revisión Dental</h3>
+                            <p>Examen completo y evaluación</p>
+                            <span class="precio">$50</span>
+                        </div>
+                    </label>
+                </div>
+                
+                <div class="servicio-option">
+                    <input type="checkbox" id="limpieza" name="servicios" value="limpieza">
+                    <label for="limpieza">
+                        <div class="servicio-info">
+                            <h3>Limpieza Dental</h3>
+                            <p>Limpieza profesional completa</p>
+                            <span class="precio">$80</span>
+                        </div>
+                    </label>
+                </div>
+                
+                <div class="servicio-option">
+                    <input type="checkbox" id="blanqueamiento" name="servicios" value="blanqueamiento">
+                    <label for="blanqueamiento">
+                        <div class="servicio-info">
+                            <h3>Blanqueamiento</h3>
+                            <p>Tratamiento blanqueador profesional</p>
+                            <span class="precio">$200</span>
+                        </div>
+                    </label>
+                </div>
+                
+                <div class="servicio-option">
+                    <input type="checkbox" id="ortodoncia" name="servicios" value="ortodoncia">
+                    <label for="ortodoncia">
+                        <div class="servicio-info">
+                            <h3>Ortodoncia</h3>
+                            <p>Tratamiento de ortodoncia completo</p>
+                            <span class="precio">$3,000</span>
+                        </div>
+                    </label>
+                </div>
+                
+                <div class="servicio-option">
+                    <input type="checkbox" id="implantes" name="servicios" value="implantes">
+                    <label for="implantes">
+                        <div class="servicio-info">
+                            <h3>Implantes Dentales</h3>
+                            <p>Implante dental individual</p>
+                            <span class="precio">$1,500</span>
+                        </div>
+                    </label>
+                </div>
+                
+                <div class="servicio-option">
+                    <input type="checkbox" id="odontopediatria" name="servicios" value="odontopediatria">
+                    <label for="odontopediatria">
+                        <div class="servicio-info">
+                            <h3>Odontopediatría</h3>
+                            <p>Cuidado dental especializado</p>
+                            <span class="precio">$60</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="cotizador-actions">
+                <button type="submit" class="btn-cotizar">
+                    <i class="fas fa-calculator"></i> Calcular Cotización
+                </button>
+                <button type="button" class="btn-limpiar" onclick="limpiarCotizador()">
+                    <i class="fas fa-eraser"></i> Limpiar Selección
+                </button>
+            </div>
+        </form>
+        
+        <!-- Resultado de la cotización -->
+        <div id="resultado-cotizacion" class="resultado-cotizacion" style="display: none;">
+            <!-- El contenido se genera dinámicamente con JavaScript -->
+        </div>
+        
+        <!-- Información adicional -->
+        <div class="info-cotizador">
+            <h3><i class="fas fa-info-circle"></i> Información Importante</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-percentage"></i>
+                    <h4>Descuentos por Paquetes</h4>
+                    <p>2 servicios: 5% descuento<br>
+                    3 servicios: 10% descuento<br>
+                    4 servicios: 15% descuento<br>
+                    5+ servicios: 20% descuento</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h4>Validez de Cotización</h4>
+                    <p>Las cotizaciones son válidas por 30 días desde la fecha de emisión.</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <h4>Consulta Personalizada</h4>
+                    <p>Para tratamientos complejos, agenda una consulta personalizada.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </main>
    <footer>
         <div class="container">
@@ -99,5 +217,6 @@
             </div>
         </div>
     </footer>
+    <script src="cotizador.js"></script>
 </body>
 </html>
