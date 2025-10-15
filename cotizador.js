@@ -110,13 +110,13 @@ function mostrarResultadoDetallado(subtotal, descuento, total, servicios) {
                 ${descuento > 0 ? `
                     <div class="costo-item descuento">
                         <span>Descuento (${porcentajeDescuento}%):</span>
-                        <span>-$${descuento.toFixed(2)}</span>
+                        <span>-${descuento.toFixed(2)}BS</span>
                     </div>
                 ` : ''}
                 
                 <div class="costo-item total">
                     <span><strong>Total:</strong></span>
-                    <span><strong>$${total.toFixed(2)}</strong></span>
+                    <span><strong>${total.toFixed(2)}BS</strong></span>
                 </div>
             </div>
             
