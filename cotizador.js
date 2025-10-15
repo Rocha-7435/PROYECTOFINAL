@@ -95,7 +95,7 @@ function mostrarResultadoDetallado(subtotal, descuento, total, servicios) {
                     ${servicios.map(servicio => `
                         <li>
                             <i class="fas fa-check-circle"></i>
-                            ${obtenerNombreServicio(servicio)} - $${preciosServicios[servicio]}
+                            ${obtenerNombreServicio(servicio)} - BS${preciosServicios[servicio]}
                         </li>
                     `).join('')}
                 </ul>
