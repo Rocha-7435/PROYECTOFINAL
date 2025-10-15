@@ -104,7 +104,7 @@ function mostrarResultadoDetallado(subtotal, descuento, total, servicios) {
             <div class="resumen-costos">
                 <div class="costo-item">
                     <span>Subtotal:</span>
-                    <span>$${subtotal.toFixed(2)}</span>
+                    <span>BS${subtotal.toFixed(2)}</span>
                 </div>
                 
                    
