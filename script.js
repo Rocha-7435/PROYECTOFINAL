@@ -43,3 +43,24 @@ function mostrarReloj() {
 
 // Asegura que el reloj se inicie al cargar la página
 window.addEventListener('load', mostrarReloj);
+
+// FAQ functionality (moved from contactos.js)
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', function() {
+            // Close other open items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            
+            // Toggle current item
+            item.classList.toggle('active');
+        });
+    });
+});
