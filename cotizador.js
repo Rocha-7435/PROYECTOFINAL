@@ -67,7 +67,7 @@ function calcularCotizacion() {
     mostrarResultadoDetallado(subtotal, montoDescuento, total, serviciosSeleccionados);
 }
 
-
+//se usaron las comillas simples invertidas para poder usar variables dentro del string
 function mostrarResultado(mensaje, tipo = 'info') {
     const resultadoDiv = document.getElementById('resultado-cotizacion');
     resultadoDiv.innerHTML = `
@@ -107,8 +107,8 @@ function mostrarResultadoDetallado(subtotal, descuento, total, servicios) {
                     <span>$${subtotal.toFixed(2)}</span>
                 </div>
                 
-                ${descuento > 0 ? `
-                    <div class="costo-item descuento">
+                   
+                ${descuento > 0 ? `/
                         <span>Descuento (${porcentajeDescuento}%):</span>
                         <span>-${descuento.toFixed(2)}BS</span>
                     </div>
